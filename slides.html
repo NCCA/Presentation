@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>PUT TITLE HERE</title>
+    <link rel="stylesheet" href="/jmacey/js/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/jmacey//js/reveal.js/css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="/jmacey//js/reveal.js/lib/css/zenburn.css">
+</head>
+
+<body>
+    <div class="reveal">
+    <div class="slides">
+
+        
+    <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+    <section data-markdown="slides.md" data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$"></section>
+
+        
+    </div>
+    </div>
+
+    <script src="/jmacey/js/reveal.js/lib/js/head.min.js"></script>
+    <script src="/jmacey/js/reveal.js/js/reveal.js"></script>
+
+    <script>
+
+    Reveal.initialize({
+                        controls: true,
+                        progress: true,
+                        history: true,
+                        center: true,
+                        math: {
+                        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                        },
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                            { src: '/jmacey//js/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                            { src: '/jmacey//js/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                            { src: '/jmacey//js/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                            { src: '/jmacey//js/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                            { src: '/jmacey//js/reveal.js/plugin/notes/notes.js' },
+                            { src: '/jmacey//js/reveal.js/plugin/math/math.js', async: true }
+                            ]
+    });
+
+		</script>
+	</body>
+</html>
